@@ -1,0 +1,2 @@
+# cams-man
+camera info
