@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cams-Man – your go-to resource for camera reviews, comparisons, and buying guides." />
+  <title>Cams-Man – Camera Info &amp; Reviews</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">📷</span>
+        <span class="logo-text">Cams-Man</span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#featured">Featured</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#guides">Guides</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>Your Camera, Perfectly Chosen.</h1>
+      <p class="hero-sub">Expert reviews, honest comparisons, and straight-talking buying guides — so you capture every moment with the right gear.</p>
+      <a href="#featured" class="btn btn-primary">Explore Reviews</a>
+    </div>
+  </section>
+
+  <!-- ===== SEARCH ===== -->
+  <section class="search-bar-section">
+    <div class="container">
+      <form class="search-form" role="search" id="search-form">
+        <label for="search-input" class="sr-only">Search cameras</label>
+        <input type="search" id="search-input" placeholder="Search cameras, brands, types…" autocomplete="off" />
+        <button type="submit" class="btn btn-secondary">Search</button>
+      </form>
+      <p id="search-notice" class="search-notice" hidden>No results found. Try a different query.</p>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED CAMERAS ===== -->
+  <main>
+    <section class="section" id="featured">
+      <div class="container">
+        <h2 class="section-title">Featured Cameras</h2>
+        <p class="section-sub">Hand-picked picks for every photographer.</p>
+        <div class="card-grid" id="camera-grid">
+
+          <article class="card" data-tags="mirrorless sony full-frame">
+            <div class="card-badge">Editor's Pick</div>
+            <div class="card-img-wrap">
+              <div class="card-img-placeholder" aria-hidden="true">🎞️</div>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Mirrorless</span>
+              <h3 class="card-title">Sony Alpha 7 IV</h3>
+              <p class="card-desc">A stellar all-rounder with a 33 MP full-frame sensor, 4K 60p video, and best-in-class autofocus — perfect for hybrid shooters.</p>
+              <div class="card-meta">
+                <span class="rating" aria-label="Rating: 5 out of 5">★★★★★</span>
+                <span class="price">~$2,499</span>
+              </div>
+              <a href="#" class="btn btn-outline card-btn">Read Review</a>
+            </div>
+          </article>
+
+          <article class="card" data-tags="dslr canon crop-sensor">
+            <div class="card-img-wrap">
+              <div class="card-img-placeholder" aria-hidden="true">📸</div>
+            </div>
+            <div class="card-body">
+              <span class="card-category">DSLR</span>
+              <h3 class="card-title">Canon EOS Rebel SL3</h3>
+              <p class="card-desc">Lightweight and beginner-friendly, the SL3 packs a 24.1 MP APS-C sensor and a fully articulating touchscreen into the world's smallest DSLR body.</p>
+              <div class="card-meta">
+                <span class="rating" aria-label="Rating: 4 out of 5">★★★★☆</span>
+                <span class="price">~$749</span>
+              </div>
+              <a href="#" class="btn btn-outline card-btn">Read Review</a>
+            </div>
+          </article>
+
+          <article class="card" data-tags="mirrorless fujifilm crop-sensor">
+            <div class="card-badge card-badge--new">New</div>
+            <div class="card-img-wrap">
+              <div class="card-img-placeholder" aria-hidden="true">🖼️</div>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Mirrorless</span>
+              <h3 class="card-title">Fujifilm X-T5</h3>
+              <p class="card-desc">40.2 MP APS-C resolution, film-simulation modes beloved by photographers, and a retro design that makes shooting a joy. Landscape and travel photographers rejoice.</p>
+              <div class="card-meta">
+                <span class="rating" aria-label="Rating: 5 out of 5">★★★★★</span>
+                <span class="price">~$1,699</span>
+              </div>
+              <a href="#" class="btn btn-outline card-btn">Read Review</a>
+            </div>
+          </article>
+
+          <article class="card" data-tags="mirrorless nikon full-frame">
+            <div class="card-img-wrap">
+              <div class="card-img-placeholder" aria-hidden="true">🔭</div>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Mirrorless</span>
+              <h3 class="card-title">Nikon Z6 III</h3>
+              <p class="card-desc">A game-changer for action shooters — partially-stacked sensor enabling blackout-free shooting at 20 fps, 6K RAW video, and Nikon's legendary ergonomics.</p>
+              <div class="card-meta">
+                <span class="rating" aria-label="Rating: 5 out of 5">★★★★★</span>
+                <span class="price">~$1,999</span>
+              </div>
+              <a href="#" class="btn btn-outline card-btn">Read Review</a>
+            </div>
+          </article>
+
+          <article class="card" data-tags="compact point-and-shoot sony">
+            <div class="card-img-wrap">
+              <div class="card-img-placeholder" aria-hidden="true">🤳</div>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Compact</span>
+              <h3 class="card-title">Sony RX100 VII</h3>
+              <p class="card-desc">Pocket-sized powerhouse with a 20.1 MP 1-inch sensor, 24–200 mm equivalent zoom, and blazing autofocus borrowed from Sony's pro mirrorless lineup.</p>
+              <div class="card-meta">
+                <span class="rating" aria-label="Rating: 4 out of 5">★★★★☆</span>
+                <span class="price">~$1,299</span>
+              </div>
+              <a href="#" class="btn btn-outline card-btn">Read Review</a>
+            </div>
+          </article>
+
+          <article class="card" data-tags="action gopro waterproof">
+            <div class="card-badge card-badge--deal">Best Value</div>
+            <div class="card-img-wrap">
+              <div class="card-img-placeholder" aria-hidden="true">🏄</div>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Action</span>
+              <h3 class="card-title">GoPro HERO12 Black</h3>
+              <p class="card-desc">Waterproof to 10 m, 5.3K video, HyperSmooth 6.0 stabilization, and a new 8:7 aspect ratio that future-proofs your footage for any platform.</p>
+              <div class="card-meta">
+                <span class="rating" aria-label="Rating: 4 out of 5">★★★★☆</span>
+                <span class="price">~$399</span>
+              </div>
+              <a href="#" class="btn btn-outline card-btn">Read Review</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CATEGORIES ===== -->
+    <section class="section section--alt" id="categories">
+      <div class="container">
+        <h2 class="section-title">Browse by Category</h2>
+        <p class="section-sub">Find the right camera type for your style.</p>
+        <div class="category-grid">
+          <a href="#" class="category-card" data-filter="mirrorless">
+            <div class="category-icon" aria-hidden="true">🔵</div>
+            <h3>Mirrorless</h3>
+            <p>Compact, fast, and future-proof systems from Sony, Fujifilm, Nikon, Canon &amp; more.</p>
+          </a>
+          <a href="#" class="category-card" data-filter="dslr">
+            <div class="category-icon" aria-hidden="true">🟤</div>
+            <h3>DSLR</h3>
+            <p>Proven optical viewfinder systems with massive lens ecosystems. Still great value.</p>
+          </a>
+          <a href="#" class="category-card" data-filter="compact">
+            <div class="category-icon" aria-hidden="true">🟢</div>
+            <h3>Compact</h3>
+            <p>Pocketable cameras that punch above their weight. Great for travel and everyday carry.</p>
+          </a>
+          <a href="#" class="category-card" data-filter="action">
+            <div class="category-icon" aria-hidden="true">🔴</div>
+            <h3>Action</h3>
+            <p>Rugged, waterproof, stabilized cameras built for adventure sports and vlogging.</p>
+          </a>
+          <a href="#" class="category-card" data-filter="film">
+            <div class="category-icon" aria-hidden="true">🟡</div>
+            <h3>Film</h3>
+            <p>Analog cameras, from affordable point-and-shoots to classic 35 mm SLRs.</p>
+          </a>
+          <a href="#" class="category-card" data-filter="medium-format">
+            <div class="category-icon" aria-hidden="true">🟣</div>
+            <h3>Medium Format</h3>
+            <p>Studio and landscape powerhouses with jaw-dropping resolution and dynamic range.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BUYING GUIDES ===== -->
+    <section class="section" id="guides">
+      <div class="container">
+        <h2 class="section-title">Buying Guides</h2>
+        <p class="section-sub">Not sure where to start? These guides have you covered.</p>
+        <div class="guides-list">
+          <a href="#" class="guide-item">
+            <span class="guide-num">01</span>
+            <div>
+              <h3>Best Cameras for Beginners in 2025</h3>
+              <p>Everything you need to take your first great photos — without blowing your budget.</p>
+            </div>
+            <span class="guide-arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#" class="guide-item">
+            <span class="guide-num">02</span>
+            <div>
+              <h3>Best Cameras for Video &amp; Vlogging</h3>
+              <p>4K, great autofocus, and mic inputs — the top picks for content creators.</p>
+            </div>
+            <span class="guide-arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#" class="guide-item">
+            <span class="guide-num">03</span>
+            <div>
+              <h3>Mirrorless vs. DSLR: Which Should You Buy?</h3>
+              <p>A clear-headed breakdown of the pros and cons in 2025.</p>
+            </div>
+            <span class="guide-arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#" class="guide-item">
+            <span class="guide-num">04</span>
+            <div>
+              <h3>Best Travel Cameras: Small Size, Big Results</h3>
+              <p>Lightweight systems that won't weigh down your adventure.</p>
+            </div>
+            <span class="guide-arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#" class="guide-item">
+            <span class="guide-num">05</span>
+            <div>
+              <h3>Camera Sensor Size Explained</h3>
+              <p>Full-frame, APS-C, Micro Four Thirds — what the numbers actually mean for your photos.</p>
+            </div>
+            <span class="guide-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section section--alt" id="about">
+      <div class="container about-inner">
+        <div class="about-text">
+          <h2>About Cams-Man</h2>
+          <p>Cams-Man was built for one reason: to cut through the noise of camera marketing and give you <strong>clear, honest information</strong> so you can buy with confidence.</p>
+          <p>We test cameras in real-world conditions — not just controlled studios — and explain what the specs actually mean for your shooting style and budget.</p>
+          <p>No affiliate bias. No confusing jargon. Just straight talk from people who love photography as much as you do.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">200+</span>
+            <span class="stat-label">Cameras Reviewed</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">50+</span>
+            <span class="stat-label">Buying Guides</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">10k+</span>
+            <span class="stat-label">Community Members</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon" aria-hidden="true">📷</span>
+        <span class="logo-text">Cams-Man</span>
+        <p>Your trusted source for camera information.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul>
+          <li><a href="#featured">Reviews</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#guides">Guides</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Cams-Man. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
